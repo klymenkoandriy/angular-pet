@@ -2,11 +2,34 @@
   <h2> Material Details</h2>
   <h3>
     <div><span>id: </span>{{material.id}}</div>
-    <div><span>name: </span>{{material.name}}</div>
+    <div><span>customer: </span>{{material.customerName}}</div>
+    <div><span>req.number: </span>{{material.requestNumber}}</div>
+    <div><span>priority: </span>{{material.priority}}</div>
+    <div><span>invoice: </span>{{material.invoice}}</div>
   </h3>
 
-  <label>name:
-    <input [(ngModel)]="material.name" placeholder="name">
-  </label>
+  <div>
+    <label>customer:
+      <input [(ngModel)]="material.customerName" placeholder="name">
+    </label>
+  </div>
+
+  <div>
+    <label>request:
+      <input [(ngModel)]="material.requestNumber" placeholder="request number">
+    </label>
+  </div>
+
+  <div>
+    <label>priority:
+      <input [(ngModel)]="material.priority" placeholder="priority">
+    </label>
+  </div>
+
+  <div>
+    <label>invoice:
+      <input [(ngModel)]="material.invoice" placeholder="invoice code">
+    </label>
+  </div>
 
 </div>

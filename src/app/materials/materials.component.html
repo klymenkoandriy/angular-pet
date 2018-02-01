@@ -3,7 +3,9 @@
 <h2>All materials (select)</h2>
 <ul class="materials">
   <li *ngFor="let material of materials" (click)="onSelect(material)" [class.selected]="material === selectedMaterial">
-    <span class="badge">{{material.id}}</span> {{material.name}}
+    <span class="badge">{{material.id}}</span> <span class="name">{{material.customerName}}</span>
+    <span class="priority">{{material.priority}}</span> {{material.invoice}}
+    <span class="request">{{material.requestNumber}}</span>
   </li>
 </ul>
 

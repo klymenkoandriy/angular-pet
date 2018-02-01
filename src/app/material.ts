@@ -1,4 +1,7 @@
 export class Material {
-  id: number;
-  name: string;
+  id: string;
+  customerName: string;
+  requestNumber: number;
+  priority: number;
+  invoice: string;
 }
