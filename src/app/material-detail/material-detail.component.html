@@ -1,0 +1,12 @@
+<div *ngIf="material">
+  <h2> Material Details</h2>
+  <h3>
+    <div><span>id: </span>{{material.id}}</div>
+    <div><span>name: </span>{{material.name}}</div>
+  </h3>
+
+  <label>name:
+    <input [(ngModel)]="material.name" placeholder="name">
+  </label>
+
+</div>

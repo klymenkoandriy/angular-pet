@@ -9,11 +9,6 @@ import {MATERIALS} from '../mock-materials';
 })
 export class MaterialsComponent implements OnInit {
 
-  material: Material = {
-    id: 1,
-    name: 'Windstorm'
-  };
-
   materials = MATERIALS;
   selectedMaterial: Material;
 
